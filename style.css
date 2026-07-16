@@ -599,3 +599,66 @@ border-radius:50px;
 background:#090909;
 
    }
+/* ==========================
+   WELCOME POPUP
+========================== */
+
+#welcomePopup{
+
+position:fixed;
+
+top:50%;
+
+left:50%;
+
+transform:translate(-50%,-50%) scale(.8);
+
+background:rgba(15,15,15,.92);
+
+backdrop-filter:blur(20px);
+
+padding:40px;
+
+border-radius:25px;
+
+border:1px solid rgba(255,255,255,.1);
+
+text-align:center;
+
+z-index:999999;
+
+opacity:0;
+
+transition:.8s;
+
+box-shadow:0 0 60px rgba(212,175,55,.15);
+
+}
+
+#welcomePopup.show{
+
+opacity:1;
+
+transform:translate(-50%,-50%) scale(1);
+
+}
+
+#welcomePopup h2{
+
+font-family:'Cormorant Garamond',serif;
+
+font-size:42px;
+
+margin-bottom:15px;
+
+color:#f3d6a5;
+
+}
+
+#welcomePopup p{
+
+line-height:1.8;
+
+opacity:.85;
+
+}
