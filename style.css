@@ -729,3 +729,18 @@ opacity:.85;
 }
 
    }
+.close-btn{
+    margin-top:20px;
+    padding:12px 24px;
+    border:none;
+    border-radius:30px;
+    background:#f7b6c8;
+    color:white;
+    font-size:16px;
+    cursor:pointer;
+    transition:.3s;
+}
+
+.close-btn:hover{
+    transform:scale(1.05);
+}
