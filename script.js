@@ -175,3 +175,12 @@ alert("💌 Letter " + number + " opened ❤️");
 },700);
 
    }
+function closeLetter(event){
+
+event.stopPropagation();
+
+let envelope = event.target.closest(".envelope");
+
+envelope.classList.remove("open");
+
+}
