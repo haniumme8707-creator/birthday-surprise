@@ -151,6 +151,7 @@ welcome.classList.add("show");
 setTimeout(()=>{
 
 welcome.classList.remove("show");
+   
 
 setTimeout(()=>{
 
@@ -161,3 +162,16 @@ welcome.remove();
 },3500);
 
 }
+function openLetter(number){
+
+let envelope = event.currentTarget;
+
+envelope.classList.toggle("open");
+
+setTimeout(()=>{
+
+alert("💌 Letter " + number + " opened ❤️");
+
+},700);
+
+   }
