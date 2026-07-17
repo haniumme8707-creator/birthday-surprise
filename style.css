@@ -744,3 +744,36 @@ opacity:.85;
 .close-btn:hover{
     transform:scale(1.05);
 }
+.envelope{
+    position: relative;
+}
+
+.inside-letter{
+    position:absolute;
+    left:10%;
+    top:20px;
+    width:80%;
+    background:white;
+    color:#333;
+    padding:20px;
+    border-radius:12px;
+    box-shadow:0 10px 30px rgba(0,0,0,.2);
+
+    opacity:0;
+    transform:translateY(40px);
+    transition:.8s;
+
+    z-index:-1;
+}
+
+.envelope.open .inside-letter{
+    opacity:1;
+    transform:translateY(-80px);
+    z-index:5;
+}
+
+.inside-letter p{
+    font-size:14px;
+    line-height:1.6;
+    color:#333;
+}
