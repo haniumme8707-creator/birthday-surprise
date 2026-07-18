@@ -777,3 +777,71 @@ opacity:.85;
     line-height:1.6;
     color:#333;
 }
+.envelope{
+    position:relative;
+    overflow:visible;
+}
+
+.letter-paper{
+
+position:absolute;
+
+left:50%;
+
+top:45px;
+
+transform:translateX(-50%) translateY(50px);
+
+width:78%;
+
+height:130px;
+
+background:white;
+
+border-radius:10px;
+
+box-shadow:0 15px 30px rgba(0,0,0,.2);
+
+display:flex;
+
+flex-direction:column;
+
+justify-content:center;
+
+align-items:center;
+
+opacity:0;
+
+transition:.8s;
+
+z-index:-1;
+
+}
+
+.letter-paper span{
+
+font-size:35px;
+
+margin-bottom:10px;
+
+}
+
+.letter-paper p{
+
+color:#333;
+
+font-size:15px;
+
+font-weight:600;
+
+}
+
+.envelope.open .letter-paper{
+
+opacity:1;
+
+transform:translateX(-50%) translateY(-65px);
+
+z-index:5;
+
+}
