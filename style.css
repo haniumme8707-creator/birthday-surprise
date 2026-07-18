@@ -835,13 +835,12 @@ font-size:15px;
 font-weight:600;
 
 }
-
 .envelope.open .letter-paper{
 
 opacity:1;
 
-transform:translateX(-50%) translateY(-65px);
+transform:translateX(-50%) translateY(-40px);
 
-z-index:5;
+z-index:2;
 
 }
