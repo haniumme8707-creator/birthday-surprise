@@ -11,3 +11,10 @@ const selectedEnvelope = envelopes[number - 1];
 selectedEnvelope.classList.add("open");
 
 }
+function readLetter(event, number){
+
+event.stopPropagation();
+
+alert("Letter " + number + " ❤️");
+
+}
